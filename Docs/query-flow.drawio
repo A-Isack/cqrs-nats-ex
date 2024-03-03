@@ -1,0 +1,47 @@
+<mxfile host="Electron" modified="2024-02-29T10:39:45.989Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="jASKEnWwAJHSWfH-x8Fx" version="23.1.5" type="device">
+  <diagram name="Page-1" id="_lgtGNSLhy9Box5EgJHK">
+    <mxGraphModel dx="794" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="J2pw4GA0zNSXmFnT0BGA-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="J2pw4GA0zNSXmFnT0BGA-2" target="J2pw4GA0zNSXmFnT0BGA-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J2pw4GA0zNSXmFnT0BGA-2" value="&lt;b&gt;Controller&lt;br&gt;&lt;/b&gt;Listenes to endpoint&lt;br&gt;(read requests)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="40" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="J2pw4GA0zNSXmFnT0BGA-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="J2pw4GA0zNSXmFnT0BGA-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="345" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J2pw4GA0zNSXmFnT0BGA-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="J2pw4GA0zNSXmFnT0BGA-6" target="J2pw4GA0zNSXmFnT0BGA-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J2pw4GA0zNSXmFnT0BGA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="J2pw4GA0zNSXmFnT0BGA-6" target="J2pw4GA0zNSXmFnT0BGA-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J2pw4GA0zNSXmFnT0BGA-6" value="&lt;b&gt;Service&lt;br&gt;&lt;/b&gt;Fires a command using the command class and fires it to be picked up with the command handler (Throw the command bus)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="J2pw4GA0zNSXmFnT0BGA-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="J2pw4GA0zNSXmFnT0BGA-8" target="J2pw4GA0zNSXmFnT0BGA-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J2pw4GA0zNSXmFnT0BGA-8" value="&lt;b&gt;Command&lt;br&gt;&lt;/b&gt;Creates data objects from the service and passes it to the command handler&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="40" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="J2pw4GA0zNSXmFnT0BGA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="J2pw4GA0zNSXmFnT0BGA-10" target="J2pw4GA0zNSXmFnT0BGA-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="345" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J2pw4GA0zNSXmFnT0BGA-10" value="&lt;b&gt;Command Handler&lt;br&gt;&lt;/b&gt;Receives data from the the event executes operations including saving the data using the repository" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="200" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="J2pw4GA0zNSXmFnT0BGA-11" value="&lt;b&gt;Repository&lt;br&gt;&lt;/b&gt;Saves data from the command to the designated database" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="360" width="200" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
